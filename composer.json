@@ -1,0 +1,37 @@
+{
+  "name": "vault/simple_client",
+  "type": "library",
+  "description": "Very stripped down http client with url, method and data input and server response output.",
+  "keywords": [
+    "communications", 
+    "http", 
+    "client" 
+  ],    
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "gmlrie001",
+      "email": "dev2@monzamedia.com"
+    }
+  ],
+  "require": {},
+  "minimum-stability": "dev",
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Vault\\SimpleClient\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Vault\\SimpleClient\\SimpleClientServiceProvider"
+      ],
+      "aliases": {
+        "SimpleClient": "Vault\\SimpleClient\\Facades\\SimpleClient"
+      }
+    }
+  }
+}
