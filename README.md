@@ -1,4 +1,4 @@
-# VAULT/SimpleClient
+# SimpleClient
 
 Class wrapper for generalized HTTP client for server-server communications and server-API interactions.
 
